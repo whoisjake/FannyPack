@@ -1,0 +1,5 @@
+<%= start_form_tag :action => 'login' %>
+  <%= render_partial "form" %>
+  <%= submit_tag "Login" %>
+  <%= link_to("Register", :controller=> 'profile', :action => 'new') %>
+<%= end_form_tag %>

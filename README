@@ -1,0 +1,24 @@
+--Fanny Pack--
+
+Install:
+To install the database, run the db/create.sql script
+
+
+Fanny Pack is an online collaboration tool for friends and family to better communicate.  One big problem with the current generation of communication tools is dealing 
+with the differences between people you are corresponding with.  If you'd like to post a message about how great your bachelor party was in Las Vegas, you have 
+to worry about the groom's bride seeing it as well.  Fanny Pack addresses this by allowing you to create your own network of aquaintences and place them in
+groups as they relate to you.  By creating separate groups for family and friends you can still wish your Mom happy birthday without letting all your friends know 
+that you are still a mama's boy.
+
+Fanny Pack also helps you reach out to your friends.  From your main portal page you can tell if someone has a special event coming up.  From there its a simple click 
+to their Amazon wishlist, and in under 5 minutes you can have your gift on the way...and it won't even be a month late this year.  User profiles and events are also 
+location aware so you can easily calculate what your cab ride will be back from the pub crawl (while you're still sober).
+
+--Fanny's Features--
+Invitation system to connect with other users
+Simple display of all aquaintence messages
+Ability to share event and calendar information
+Ties into user's Amazon wishlist for easier gift giving
+Notification of online contacts
+Profile searching
+Easily post messages to different groups of people

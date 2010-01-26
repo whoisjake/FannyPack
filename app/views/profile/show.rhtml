@@ -1,0 +1,9 @@
+<div id="side">
+<%= render_partial "profile/profile", :user => @user -%>
+</div>
+<div id="core">
+	<h2>My Messages</h2>
+	<%= render_partial "profile/messages", :messages => @user.messages -%>
+	<h2>My Events</h2>
+	<%= render_partial "profile/events", :events => @user.events -%>
+</div>

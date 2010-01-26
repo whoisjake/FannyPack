@@ -1,0 +1,12 @@
+<div id="invitation<%= invitation.id.to_s -%>">
+	<%=h invitation.group.user.to_s -%>
+	<%= link_to_remote("Decline",
+    :url=>{
+        :controller=>"profile",
+        :action=>"decline_invitation",
+        :id=>invitation.id},
+       :complete => "new Effect.Fade('invitation#{invitation.id}')",
+      :confirm=>"Are you sure you want to decline the invitation?",
+      :loading=>"status='Declining invitation...';")
+	%>
+</div>

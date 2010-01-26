@@ -1,0 +1,28 @@
+<html>
+	<head>
+  	<title>Fanny Pack: <%=h @heading -%></title>
+  	<%= stylesheet_link_tag '/themes/fannypack/stylesheets/main.css' %>
+  	<%= javascript_include_tag "prototype" %>
+  </head>
+  <body>
+  	<div id="wrapper">
+  		<div id="header">
+  			<%= link_to("Fanny Pack", :controller=> 'welcome', :action => 'index') %>
+  		</div>
+  		<%= render_partial "shared/menu" -%>
+  		<div id="main">
+		  	<% if @flash[:notice] -%>
+					<div id="notice"><%= @flash[:notice] %></div>
+					<script type="text/javascript">
+						new Effect.Highlight('notice')
+					</script>
+				<% end -%>
+				<%= @content_for_layout %>
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		&copy; 2005 Neil Iversen, John Howes, Jake Good - "It's not your mung."
+	</div>
+  </body>
+</html>

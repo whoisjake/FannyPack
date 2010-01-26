@@ -1,0 +1,6 @@
+<div id="event<%=event.id.to_s%>">
+	<h3><%=h event.name -%></h3>
+	<div class="dateline"><%=h event.date.to_s -%></div>
+	<div class="message"><%=h event.location -%></div>
+	<div class="info">Posted by <%=h event.user.to_s -%></div>
+</div>

@@ -1,0 +1,40 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+first_user:
+  id: 1
+  username: test@user.com
+  hashed_password: <%=Digest::SHA1.hexdigest('password')%>
+  first_name: test
+  last_name: user 1
+  email: test@user.com
+  address1: Address 1
+  address2: Address 2
+  city: Test City
+  state: MN
+  zip_code: 55317
+  last_activity: 2005-01-26 00:00:00
+another_user:
+  id: 2
+  username: test@user.com
+  hashed_password: <%=Digest::SHA1.hexdigest('password')%>
+  first_name: test
+  last_name: user 2
+  email: test@user.com
+  address1: Address 1
+  address2: Address 2
+  city: Test City
+  state: MN
+  zip_code: 55317
+  last_activity: 2005-01-26 00:00:00
+third_user:
+  id: 3
+  username: tes3t@user.com
+  hashed_password: <%=Digest::SHA1.hexdigest('password')%>
+  first_name: test
+  last_name: user 3
+  email: test@user.com
+  address1: Address 1
+  address2: Address 2
+  city: Test City
+  state: MN
+  zip_code: 55317
+  last_activity: 2005-01-26 00:00:00

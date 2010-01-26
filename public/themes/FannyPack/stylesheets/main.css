@@ -1,0 +1,115 @@
+body {
+	font-family: verdana, arial, helvetica;
+	font-size: .8em;
+	margin: 0;
+  padding: 0;
+  border: 0;
+  text-align: center;
+	background: #bba url(../images/background.gif) top center repeat-y;
+}
+
+#wrapper  {
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  width: 690px;
+  text-align: left;
+  background: #fff url(../images/wrapper.gif) top right repeat-y;
+  font-size:90%;
+}
+#menu {
+	float: right;
+	font-size: 1em;
+	color: Navy;
+	padding: .5em;
+	text-align: right;
+}
+#menu a {
+	color: Navy;
+}
+#main {
+	padding: 2em;
+}
+#header {
+	font-size: 2em;
+	color: White;
+	background-color: DarkOrange;
+	padding: 1em;
+	border-bottom: solid .5em Navy;
+}
+#header a {
+	color: White;
+	text-decoration: none;
+}
+#notice {
+	font-size: 1em;
+	font-weight: bold;
+	padding: .5em;
+	margin-bottom: .5em;
+	color: Navy;
+	border-left: solid .2em DarkOrange;
+}
+#core {
+	float: left;
+}
+#side {
+	padding: 1em;
+	width: 200px;
+	height: 100%;
+	float: right;
+	border-left: solid 1px #bba;
+}
+a {
+	color: Navy;
+}
+td {
+	font-family: verdana, arial, helvetica;
+	font-size: .8em;
+}
+h1 {
+	font-family: verdana, arial, helvetica;
+	font-size: 1.6em;
+}
+h2 {
+	width: 400px;
+	font-size: 1.4em;
+	border-bottom: solid 1px black;
+	margin-bottom: .2em;
+}
+h3 {
+	width: 400px;
+	font-size: 1em;
+	margin-bottom: 0em;
+}
+th {
+	color: White;
+	background-color: Navy;
+	text-align: left;
+	font-family: verdana, arial, helvetica;
+	font-size: .8em;
+}
+.module {
+	border: solid 1px #bba;
+	padding: .5em;
+	margin-bottom: 1em;
+}
+.module_header {
+	padding: .5em;
+	background-color: Navy;
+	color: white;
+}
+.dateline {
+	font-size: .8em;
+	color: gray;
+}
+.message {
+	margin-top: .4em;
+	margin-bottom: .4em;
+}
+.info {
+	font-size: .8em;
+	color: gray;
+}
+div.link {
+	
+}

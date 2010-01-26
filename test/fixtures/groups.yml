@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+first_group:
+  id: 1
+  user_id: 1
+  group_name: User 1 Group
+another_group:
+  id: 2
+  user_id: 2
+  group_name: User 2 Group
+yet_another_group:
+  id: 3
+  user_id: 2
+  group_name: User 2 Group

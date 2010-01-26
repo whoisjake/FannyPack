@@ -1,0 +1,8 @@
+<div class="module_header">Active Users</div>
+<div id="people" class="module">
+	<%= render_partial "profile/people", :people => @user.get_logged_in_users -%>
+</div>
+<%= periodically_call_remote(
+	:update => 'people',
+	:url => { :controller => 'profile', :action => 'view_people' },
+	:frequency => 10 )-%>

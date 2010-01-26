@@ -1,0 +1,5 @@
+<% people.each do |person| %>
+<div>
+<%= link_to h(person.to_s), :controller => 'profile', :action => :show, :id => person.id -%>
+</div>
+<% end %>

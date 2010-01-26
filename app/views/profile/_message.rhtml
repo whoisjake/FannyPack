@@ -1,0 +1,9 @@
+<div id="message<%=message.id.to_s%>">
+	<h3><%=h message.subject -%></h3>
+	<div class="dateline"><%=h message.posted.to_s -%></div>
+	<div class="message"><%=h message.message[0...200] -%></div>
+	<div class="info">Posted by <%=h message.user.to_s -%></div>
+	<% if message.user == @user %>
+		<div class="link"><%= link_to 'Edit', :controller => 'messages', :action => :edit, :id => message.id -%></div>
+	<% end %>
+</div>

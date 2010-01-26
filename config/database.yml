@@ -1,0 +1,20 @@
+development:
+  adapter: mysql
+  database: fannypack_development
+  host: 192.168.10.4
+  username: root
+  password: railsday
+
+test:
+  adapter: mysql
+  database: fannypack_test
+  host: 192.168.10.4
+  username: root
+  password: railsday
+
+production:
+  adapter: mysql
+  database: fannypack_production
+  host: 192.168.10.4
+  username: root
+  password: railsday

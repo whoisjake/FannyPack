@@ -1,0 +1,28 @@
+<h1>Users</h1>
+<table cellpadding="4" cellspacing="0" border="0">
+  <tr>
+  	<th>Username</th>
+  	<th>Name</th>
+  	<th>Email</th>
+  	<th></th>
+  	<th></th>
+  	<th></th>
+  </tr>
+<% for user in @users %>
+  <tr>
+    <td><%=h user.username %></td>
+    <td><%=h user.first_name + ' ' + user.last_name %></td>
+    <td><%=h user.email %></td>
+    <td><%= link_to 'Show', :action => 'show', :id => user %></td>
+    <td><%= link_to 'Edit', :action => 'edit', :id => user %></td>
+    <td><%= link_to 'Destroy', {:action => 'destroy', :id => user}, :confirm => "Are you sure?" %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to "Previous page", { :page => @user_pages.current.previous } if @user_pages.current.previous %>
+<%= link_to "Next page", { :page => @user_pages.current.next } if @user_pages.current.next %> 
+
+<br />
+
+<%= link_to 'New user', :action => 'new' %>

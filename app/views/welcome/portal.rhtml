@@ -1,0 +1,14 @@
+<div id="side">
+<%= render_partial "profile/profile", :user => @user -%>
+<%= render_partial "profile/people_viewer", :people => @user.get_logged_in_users -%>
+</div>
+<div id="core">
+<h2>Invitations</h2>
+<%= render_partial "profile/invitations", :invitations => @user.invitations -%>
+<h2>Messages</h2>
+<%= render_partial "profile/messages", :messages => @user.get_all_messages[0...3] -%><br />
+<%= link_to("View All", :controller=> 'messages', :action => 'list') -%>
+<h2>Events</h2>
+<%= render_partial "profile/events", :events => @user.get_all_events[0...3] -%>
+<%= link_to("View All", :controller=> 'events', :action => 'list') -%>
+</div>

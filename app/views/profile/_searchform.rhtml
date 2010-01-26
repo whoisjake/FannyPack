@@ -1,0 +1,8 @@
+<h1>Search for a user by username</h1>
+<!--[form:query]-->
+<input id="search" name="search" type="text" value="">
+<%= observe_field 'search',  :frequency => 0.1, 
+         :update => 'target_id', :url => 
+         { :controller => 'profile', :action=> 'autocomplete' }, 
+         :with => "'search=' + escape(value)" %>
+<!--[eoform:query]-->

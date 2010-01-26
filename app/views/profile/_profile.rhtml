@@ -1,0 +1,24 @@
+<div class="module_header">My Profile</div>
+<div class="module">
+<table>
+	<tr valign="top">
+		<td><img width="100" src="<%= url_for(:controller => "profile", :action => "photo", :id => user.id) %>" /></td>
+		<td><strong><%=h user.to_s -%></strong></td>
+	</tr>
+	<tr>
+	<td columnspan="2">
+		<br/>
+		<% if user.city != "" && user.state != "" %>
+		Location:
+		<br/>
+		<a href="http://maps.google.com/maps?q=<%=h user.city %>,<%=h user.state %>" target="_blank"><%=h user.city %>, <%=h user.state %></a>
+		<% end %>
+		<% if user.zip_code != "" %>
+		<a href="http://maps.google.com/maps?q=<%=h user.zip_code %>" target="_blank"><%=h user.zip_code %></a>
+		<br/>
+		<% end %>
+		<br/>
+	</td>
+	</tr>
+</table>
+</div>

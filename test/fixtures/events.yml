@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+first_event:
+  id: 1
+  user_id: 1
+  name: User Event 1
+  location: User 1 Location
+  date: 2005-01-26 00:00:00
+another_event:
+  id: 2
+  user_id: 2
+  name: User Event 2
+  location: User 2 Location
+  date: 2005-01-26 00:00:00
